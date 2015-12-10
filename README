@@ -1,0 +1,24 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=5282
+
+For the full README visit the GitHub repo: https://github.com/joonty/vim-do.
+
+== Description
+
+The aim of this plugin is to provide a quick and simple way of running shell commands in the background, and displaying the results (output, exit status, etc) in a Vim buffer as the process is running. That means you can run several commands, carry on working in Vim, and swap between the processes at will or just keep them running hidden in the background.
+
+It works nicely for both short- and long-running processes, and the great thing is that you don't have to swap between a terminal and Vim to run commands or see their output.
+
+== Features
+
+After installing (see below) you're given the :Do vim command, which allows you to run any shell command:
+
+    :Do echo "hi"
+    :Do rake
+    :Do find /
+
+Oops, that last command is gonna take a while...
+
+But don't worry, it's asynchronous! A new buffer will pop up while it's running and show the output. If you close it, it will keep running until the command finishes naturally. You can run as many commands at the same time as your computer can handle.
+
+For more information, continue reading on the GitHub README: https://github.com/joonty/vim-do.
+
